@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -10,7 +12,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,10 +52,7 @@
                     android:textSize="13sp" />
 
             </LinearLayout>
-
         </LinearLayout>
-
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -73,8 +71,6 @@
             android:textSize="16sp"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="24dp" />
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,138 +109,43 @@
 
         </LinearLayout>
 
-
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quick Access"
-            android:textColor="#0D3075"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="14dp" />
-
-
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="12dp"
-                android:background="@drawable/bg_cyan_card">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="01"
-                    android:textColor="#0D3075"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Services"
-                    android:textColor="#0D3075"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="5dp" />
-
-            </LinearLayout>
-
-
-
-            <Space
-                android:layout_width="12dp"
-                android:layout_height="1dp" />
-
-
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="12dp"
-                android:background="@drawable/bg_red_card">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="02"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Information"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="5dp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="18dp"
-            android:background="@drawable/bg_outline_card"
-            android:layout_marginTop="12dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Learn More"
-                android:textColor="#0D3075"
-                android:textSize="17sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="→"
-                android:textColor="#DA4D25"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-
+            android:text="Login or register to access Services, Information, and more."
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="28dp" />
 
         <TextView
+            android:id="@+id/superButton"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/bg_primary_button"
             android:gravity="center"
             android:letterSpacing="0.08"
-            android:text="GET STARTED"
+            android:text="LOGIN"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="New here? Create an account"
+            android:textColor="#DA4D25"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -253,9 +154,8 @@
             android:textColor="#999999"
             android:textSize="12sp"
             android:gravity="center"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
 
     </LinearLayout>
-
 </ScrollView>
